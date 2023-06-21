@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Landing Page </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../src/input.css">
+</head>
+<body class='relative min-h-screen'>
+    <header id="header" class='sticky top-0 z-10 '>
+        <nav class="p-6 mx-auto w-full  bg-white"> 
+            <div class="flex items-center justify-between relative mx-auto max-w-6xl  p-4"> 
+                <!-- Logo -->           
+                <div class="pt-2 flex">                    
+                    <span class="text-3xl text-Greenqrc font-bold sm:text-2xl"> ProjectPro.</span>              
+                </div>    
+                <!-- menu items -->
+                <div class="hidden md:flex space-x-6 mt-2">
+                    <a href="#" class='text-[15px] hover:text-Green1 hover:border-b-2 hover:border-b-border'>Pricing</a>
+                    <a href="#" class='text-[15px]  hover:text-Green1 hover:border-b-2 hover:border-b-border'>Product</a>
+                    <a href="#" class='text-[15px] hover:text-Green1 hover:border-b-2 hover:border-b-border'>About Us</a>
+                    <a href="#" class='text-[15px] hover:text-Green1 hover:border-b-2 hover:border-b-border'>Careers</a>
+                    <a href="#" class='text-[15px] hover:text-Green1 hover:border-b-2 hover:border-b-border'>Community</a>
+                </div>
+                <!-- login/sign-in -->
+                <div class="hidden md:flex justify-center space-x-4">
+                    <button class="hidden md:block outline-none p-1 px-5 text-base border-[1px] border-darkBl rounded-[5px] text-primaryWhite  bg-brightRedLight transition ease-in-out duration-700">Start Free Trial</button>
+                    <button class="hidden md:block outline-none p-1 px-5 text-base border-[1px] border-darkBlue text-darkBlue rounded-[5px]  hover:text-[#fff] hover:bg-darkBlue transition ease-in-out duration-700">Schedule A Demo</button>
+                </div>  
+                
+                <!-- Hamburger icon -->
+                <button id='menu-btn' class='block hamburger md:hidden'>
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>        
+        </nav>
+        <!-- Mobile menu -->
+        <section id="mobile-nav" class='absolute w-full origin-top justify-center bg-Grey1 text-primaryWhite hidden'>
+
+            <nav id='mobile-nav' class="flex flex-col items-center my-8 py-6 min-h-screen" aerial-label='mobile'>
+                <a href="#hero"
+                class="w-full items-center py-4 text-center text-lg hover:opacity-90"
+                >Home</a>
+                <a href="#pricing"
+                class="w-full items-center py-4 text-center text-lg hover:opacity-90"
+                >Pricing</a>
+                <a href="#product"
+                class="w-full items-center py-4 text-center text-lg hover:opacity-90"
+                >Product</a>
+                <a
+                href="#about"
+                class="w-full items-center py-4 text-center text-lg hover:opacity-90"
+                >About Us</a>
+                <a
+                href="#careers"
+                class="w-full items-center py-4 text-center text-lg hover:opacity-90"
+                >Careers</a>
+                <a
+                href="#community"
+                class="w-full items-center py-4 text-center text-lg hover:opacity-90"
+                >Community</a>
+                <div class="flex justify-center">
+                    <button class="hidden md:block outline-none p-1 px-10 text-lg border-[1px] border-darkBlue text-darkBlue rounded-lg bg-primaryWhite transition ease-in-out duration-700">Login</button>
+                </div> 
+            </nav>
+        </section>
+    </header>
+    
+   <!-- Hero section  -->
+   <section id='hero'>
+    <div class="max-w-4xl flex flex-col items-center justify-center px-6 mt-24 mx-auto space-y-10 sm:mt-15 md:mt-18 md:max-w-6xl md:flex-row md:space-y-0">
+        <div class="flex md:w-1/2 space-y-8 mb-31 flex-col text-darkBlue relative md:mb-32">
+            <p class="max-w-4xl text-left text-sm uppercase font-bold md:text-base md:text-left sm:text-[15px] sm:leading-7">Agile Project Management Software for Streamlined Team Collaboration.</p>
+            <span class='items-end hidden md:flex'>  </span>
+            <h1 class="max-w-full text-2xl font-bold  md:max-w-md md:text-left md:text-[33px] sm:text-25px]">Efficiency, collaboration, success—unleash project potential.</h1>
+            <p class="max-w-4xl text-center text-base md:max-w-md md:text-left text-darkGrayishBlue">Elevate your project management game to unprecedented heights, achieving unparalleled efficiency and collaboration for remarkable project success.</p>
+            <div class="flex justify-center md:justify-start">          
+                <a href='#' class="p-3 px-4 pt-2 rounded-full baseline bg-darkBlue text-primaryWhite text-base" >Get Started</a>
+            </div>
+        </div>
+        <!-- Image -->
+        <div class="md:w-1/2 mx-auto">
+            <!-- <img src="img/illustration-intro.svg" alt="illustration"> -->
+            <!-- <img src="img/Group-481-cropped.webp"alt=""> -->
+            <img src="img/Frame-9392.svg" alt="" class='transform scale-105 mx-auto'>
+        </div>
+    </div>
+   </section>
+   <!-- Features Section -->
+   <section id="features" class='flex flex-col space-y-5 mb-5 sm:mb-0'>
+    <!-- section-top -->
+    <section id="feature" class="mb-5">
+        <div class="flex flex-col sm:space-y-10 max-w-5xl mx-auto mt-4 mb-9 justify-center items-center text-center rounded-md sm:mt-5 sm:max-w-6xl md:mt-3 lg:mt-0 " >
+           <h1 class="sm:max-w-6xl  ft-title text-lg flex items-center justify-center text-darkBlue font-bold text-center sm:text-[21px] md:text-4xl md:leading-10 lg:text-4xl"> Innovative Project Management Software, Simplifying Projects for Teams and Businesses.</h1>
+           <p class="text-[15px] md:leading-7 justify-center items-center text-center max-w-4xl mt-5 mx-5  md:text-base lg:text-xl">Running a project management team can be challenging. Simplify your workflows, streamline collaboration, and focus on high-value tasks with ProjectPro. Our agile project management software empowers teams to deliver exceptional results. Sign up for free and experience the power of ProjectPro.</p>
+           <div class="flex flex-col  gap-2 mt-14 max-w-4xl rounded-md mx-6 lg:mx-0 ms:flex-row leading-4">
+               <div class="flex flex-col gap-5 items-center justify-center p-5  bg-[#dbedee] rounded-xl my-auto ms:my-0 sm:p-4 ">                
+                   <h1 class="text-darkBlue text-base font-bold sm:text-xl md:text-2xl">  Enhance Productivity</h1>
+                   <p class="text-[15px] leading-6  h-40">Amplify productivity and optimize output with ProjectPro, empowering your team to achieve exceptional efficiency and deliver outstanding results.</p>
+               </div>
+               <div class="flex flex-col items-center p-5 bg-[#dbedee] gap-5 rounded-xl sm:p-4">                
+                   <h1 class="text-darkBlue text-base font-bold sm:text-xl md:text-2xl"> Foster Teamwork</h1>
+                   <p class="text-[15px] leading-6  h-40">Cultivate a culture of teamwork and seamless collaboration with ProjectPro, fostering effective communication and synergy among project stakeholders.</p>
+               </div>
+               <div class="flex flex-col gap-5 items-center p-5 bg-[#dbedee] rounded-xl sm:p-4">                
+                   <h1 class="text-darkBlue text-base font-bold sm:text-xl md:text-2xl">Simplify Workflows</h1>
+                   <p class="text-[15px] leading-6  h-40">Simplify project workflows and eliminate bottlenecks with ProjectPro, enabling smooth and efficient task management for streamlined project execution.</p>
+               </div>
+           </div>
+        </div>
+     </section>
+     <!-- section bottom -->
+    <section class='relative '>
+        <!-- flex container --> 
+        <div class=" max-w-6xl flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row relative">
+         <!-- Whats different -->
+         <div class="flex flex-col items-center space-y-7  md:space-y-10 w-full md:w-1/2 ">
+            <h1 class="text-darkBlue text-center font-bold text-2xl max-w-md md:text-left md:text-4xl ms:text-3xl sm:text-2xl">What's Different About ProjectPro</h1>
+            <p class="text-base max-w-lg md:max-w-sm text-center text-darkGrayishBlue md:text-left">"ProjectPro stands out with its intuitive interface, robust feature set, and seamless integration capabilities, revolutionizing project management for businesses of all sizes."</p>
+            <img src="img/Group-481-cropped.webp" alt="" class='container transform scale-75 -space-x-4'>
+         </div>
+         <!-- Number List -->
+         <div class='flex flex-col space-y-8 md:w-1/2 relative top-2'>
+            <!-- list item 1 -->
+            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                <!-- heading -->
+                <div class="rounded-l-full bg-Greendarker bg-opacity-75 md:bg-transparent flex items-center md:max-w-2xl">
+                    <div class="flex items-center space-x-2">
+                        <div class="px-4 py-1 text-white rounded-full md:py-1 bg-Greendarker">01</div>
+                    
+                        <h3 class="font-bold text-base md:hidden">Centralize project Information.</h3>
+                     </div>
+                </div>
+                <div >
+                    <h3 class="font-bold text-lg hidden  md:block">Centralize project Information.</h3>
+                    <p class="text-darkGrayishBlue text-[15px] pl-1 ms:pl-0">ProjectPro solves the challenge of scattered project information by centralizing all project details, tasks, and documentation in one place, promoting better organization and collaboration." </p>
+                </div>
+            </div>
+            <!-- list item 2 -->
+            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                <!-- heading -->
+                <div class="rounded-l-full bg-Greendarker bg-opacity-75 md:bg-transparent flex items-center md:max-w-2xl">
+                    <div class="flex items-center space-x-2">
+                        <div class="px-4 py-1 text-white rounded-full md:py-1 bg-Greendarker">02</div>
+                    
+                        <h3 class="font-bold text-base  mb-4 md:hidden">Centralize project Information.</h3>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg hidden md:block">Centralize project Information.</h3>
+                    <p class="text-darkGrayishBlue text-[15px] my-2">
+                        ProjectPro solves the issue of inefficient resource allocation by providing visibility into resource availability, enabling effective planning and utilization for optimized project outcomes.
+                    </p>
+                </div>
+            </div>
+            <!-- list item 3 -->
+            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+            <!-- heading -->
+            <div class="rounded-l-full bg-Greendarker bg-opacity-75 md:bg-transparent flex items-center md:max-w-2xl">
+                <div class="flex items-center space-x-2">
+                    <div class="px-4 py-1 text-white rounded-full md:py-1 bg-Greendarker">03</div>
+                
+                    <h3 class="font-bold text-base md:hidden">Centralize project Information.</h3>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg hidden mb-4 md:block ">Centralize project Information.</h3>
+                <p class="text-darkGrayishBlue text-[15px] pl-1">
+                    ProjectPro solves the problem of poor task management by offering comprehensive task tracking, assignment, and prioritization features, ensuring timely completion and improved project efficiency.</p>
+            </div>
+            </div>
+
+        <!-- Button -->
+         <a href="#" class="bg-Green1 text-center text-white text-base px-4 py-2 mx-auto flex items-center justify-center rounded-base relative top-1 w-48 md:top-10 md:relative md:ml-10 md:mx-0">Schedule a demo</a>
+         </div>         
+        </div>        
+    </section>   
+   </section>
+   
+   <!-- Pricing -->
+   <section id="pricing" class="realtive">
+    
+    <!-- top  section -->
+        <div class="max-w-4xl flex flex-col items-center justify-center px-6 mt-8 mx-auto space-y-7 md:max-w-6xl md:flex-row md:space-y-0">
+            <div class=" flex w-full md:w-1/2 space-y-8 mb-10 flex-col text-darkBlue relative sm:mb-10">
+                <h2 class="text-darkBlue  text-2xl ms:text-3xl text-center font-semibold">Pricing</h2>
+                <p class="max-w-md ms:max-w-2xl text-center text-base sm:max-w-xl md:text-left text-darkGrayishBlue">Use ProjectPro for free forever if you have up to 5 remote employees. Get a custom quote based on your company's size.</p>
+            </div>
+            <div class="ms-w-1/2">
+                <img src="img/pricing illustration-p.png" alt="" class="transform scale-75 ms:scale-80">
+            </div>
+        </div>
+        <!-- pricing section -->
+        <div class="relative">
+            <!-- background decoration -->
+        <div class="absolute inset-0 flex flex-col ">
+            <div class="flex-1"></div>
+            <div class="flex-1 bg-slate-50"></div>
+        </div>
+        <div class="max-w-7xl flex items-center flex-col mx-auto">
+            <div class="flex flex-col items-center mx-auto space-y-6">
+                <h1 class="text-2xl ms:text-4xl sm:text-3xl text-center text-darkBlue font-bold ">Try Now. Pay Later.
+                </h1>
+                <p class="text-base text-center px-6 sm:px-0">Unlock Your Project Potential: Discover the Ideal Plan to Drive Success with ProjectPro's Customizable and Affordable Pricing Solutions</p>
+            </div>
+            <!-- basic plan and Highlights -->
+            <div id='plans-container' class='grid lm:grid-cols-3 py-16 px-4 sm:px-6 lg lg:px-8 space-x-8 mx-auto max-w-6xl  '>
+                  <div class='plan' id='plan-basic-plan'>
+                    <h3 class='plan-title text-lg  font-semibold leading-5 mt-4'></h3>
+                    <p id="plan-description" class="plan-description text-sm  mt-4 leading-6"></p>
+                    <div class='plan-price flex mt-4 bg-slate-50 rounded-lg p-4 -mx-3'>
+                        <p class="text-sm text-slate-500 font-semibold flex items-center">
+                            <span class="currency"></span>
+                            <span class="price ml-3 text-slate-900 text-3xl"></span>
+                            <span class="frequency ml-1.5"></span>
+                        </p>    
+                    </div>
+                    <!-- highlights -->
+                    <ul id='highlights-list' class=" highlights mt-5 space-y-4 flex-1">
+
+                    </ul>
+                    <!-- call to action button -->
+                    <a href="" class="cta-btn mt-8 block text-white bg-Greendark hover:bg-Greendarker hover:opacity-70 py-4 px-6 text-center font-semibold text-sm leading-4 rounded-full shadow"></a>
+                  </div>
+
+                  <div class='plan relative' id='plan-pro-plan'>
+                    <h3 class='plan-title text-lg  font-semibold leading-5 mt-4'></h3>
+                    <p id="plan-description" class="plan-description text-sm  mt-4 leading-6"></p>
+                    <div class='plan-price flex mt-4 bg-slate-50 rounded-lg p-4 -mx-3'>
+                        <p class="text-sm text-slate-500 font-semibold flex items-center">
+                            <span class="currency"></span>
+                            <span class="price ml-3 text-slate-900 text-3xl"></span>
+                            <span class="frequency ml-1.5"></span>
+                        </p>    
+                    </div>
+                    <!-- highlights -->
+                    <ul id='highlights-list' class=" highlights mt-5 space-y-4">
+
+                    </ul>
+                    <!-- call to action button -->
+                    <a href="" class="cta-btn mt-8 block text-white bg-Greendark hover:bg-Greendarker hover:opacity-95 py-4 px-6 text-center font-semibold text-sm leading-4 rounded-full shadow "></a>
+
+                  </div>
+
+                  <div class='plan' id='plan-enterprise-plan'>
+                    <h3 class='plan-title text-lg  font-semibold leading-5 mt-4'></h3>
+                    <p id="plan-description" class="plan-description text-sm  mt-4 leading-6 flex items-center"></p>
+                    <div class='plan-price flex mt-4 bg-slate-50 rounded-lg p-4 -mx-3'>
+                        <p class="text-sm text-slate-500 font-semibold ">
+                            <span class="currency"></span>
+                            <span class="price ml-3 text-slate-900 text-3xl"></span>
+                            <span class="frequency ml-1.5"></span>
+                        </p>    
+                    </div>
+                    <!-- highlights -->
+                    <ul id='highlights-list' class=" highlights mt-5 space-y-4">
+
+                    </ul>
+                    <!-- call to action button -->
+                    <a href="" class="cta-btn mt-8 block text-white bg-Greendark hover:bg-Greendarker hover:opacity-70 py-4 px-6 text-center font-semibold text-sm leading-4 rounded-full shadow"></a>
+                  </div>
+            </div>
+        </div>
+        </div>
+   </section>
+
+<!-- Testimonials -->
+<section id="testimonials" class='mt-8 ms:mt-0'>
+    <div class='max-w-6xl p-5 mx-auto mt-45 text-center ms:'>
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl text-darkBlue text-center mb-14 ms:mb-20 font-bold">What People Say</h2>
+        <!-- testm container -->
+        <div class="flex flex-col md:space-x-6 sm:flex-row sm:space-x-4">
+            <!-- Testimonial 1 -->
+            <div class="flex flex-col items-center p-6 space-y-8 rounded-lg bg-veryLightGray md:w-1/3 my-10 md:my-0 ">
+                <img src="img/avatar-neda.png" alt="" class="rounded-full -mt-14 w-16">
+                <h5 class="text-lg font-bold">Neda Adib</h5>
+                <p class="text-[15px] text-darkGrayishBlue">
+                    "ProjectPro has revolutionized how our team manages projects. It streamlines collaboration, boosts efficiency, and ensures timely delivery of exceptional results."
+                </p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 my-10 md:my-0">
+                <img src="img/avatar-john.png" alt="" class="rounded-full -mt-14 w-16">
+                <h5 class="text-lg font-bold">John Bolisa</h5>
+                <p class="text-[15px] text-darkGrayishBlue">
+                    "We can't imagine managing projects without ProjectPro. It has streamlined our tasks, improved collaboration, and brought unparalleled efficiency to our team."
+                </p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3 my-10 md:my-0">
+                <img src="img/avatar-kristine.png" alt="" class="rounded-full -mt-14 w-16">
+                <h5 class="text-lg font-bold">Kristine Holmes</h5>
+                <p class="text-[15px] text-darkGrayishBlue">
+                    "Using ProjectPro has been a game-changer for our project management. It simplifies workflows, enhances team communication, and drives outstanding productivity."
+                </p>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray lg:flex md:w-1/3 my-10 md:my-0">
+                <img src="img/avatar-shanai.png" alt="" class="rounded-full -mt-14 w-16">
+                <h5 class="text-lg font-bold">Andrew Fowler</h5>
+                <p class="text-sm text-darkGrayishBlue">
+                   "ProjectPro is the ultimate project management solution. It has transformed our team's productivity, fostered seamless collaboration, and elevated project success to new heights."
+                </p>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="my-10 md:my-16 sm:my-14">
+            <a href='#' class="p-2 px-5 pt-2 rounded-full baseline bg-darkBlue text-primaryWhite text-lg" >Get Started</a>
+        </div>
+    </div>
+</section>
+<!-- FAQ -->
+<section id="faq">
+    <h1 class="text-center text-darkBlue font-bold text-2xl">Frequently asked questions</h1>
+    <div class=" sm:max-w-2xl flex flex-col mx-9 sm:mx-auto py-10 border-b-3">
+
+        <div class="faq flex flex-col py-4 cursor-pointer faq border-b-2 ">
+            <div id="question" class="question flex flex-row justify-between border-b-red-3 ">
+                <p id='faq' class='text-sm font-bold'>Can ProjectPro handle multiple projects simultaneously?</p>
+                <a id="down-arrow" class="down-arrow flex text-sm"></a>
+            </div>
+            <div class="answer text-sm py-3">
+                <p id='answer' class="text-sm mx-auto px-4 pt-4">
+                    Yes, ProjectPro efficiently manages and tracks multiple projects concurrently, ensuring seamless organization and effective project oversight.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq flex flex-col py-4 cursor-pointer faq border-b-2">
+            <div id="question" class="question flex justify-between">
+                <p class='text-sm font-bold'>Is ProjectPro compatible with different project management methodologies?</p>
+                <a class="down-arrow flex text-sm"></a>
+            </div>
+            <div class="answer text-sm py-3">
+                <p class=" text-sm mx-auto px-4 pt-4">
+                    Absolutely! ProjectPro supports diverse methodologies like Agile, Scrum, and Waterfall, providing flexibility to adapt to your preferred approach.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq flex flex-col border-b-2 py-4 cursor-pointer">
+            <div id="question" class="question flex flex-row justify-between max-w-6xl">
+                <p class='text-sm font-bold '>Can I collaborate with team members and clients using ProjectPro?</p>
+                <a class="down-arrow flex text-sm"></a>
+            </div>
+            <div class="answer text-sm py-3">
+                <p class=" text-sm mx-auto px-4 pt-4">
+                    Certainly! ProjectPro facilitates seamless collaboration and communication among team members and clients, fostering productive teamwork and client engagement.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq flex flex-col border-b-2 py-4 cursor-pointer">
+            <div id="question" class="question flex flex-row justify-between max-w-6xl">
+                <p class='text-sm font-bold'>Can ProjectPro integrate with other project management tools?</p>
+                <a class="down-arrow flex text-sm"></a>
+            </div>
+            <div class="answer text-sm py-3">
+                <p class=" text-sm mx-auto px-4 pt-4">
+                    Absolutely! ProjectPro seamlessly integrates with popular tools like Jira, Slack, and Trello, ensuring a connected project management ecosystem for enhanced efficiency.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- CTA Section -->
+<section id="cta" class="bg-Green02 h-auto">
+    <!-- Flex Container -->
+    <div class="flex flex-col items-center justify- px-4 py-3 sm:py-20 mx-auto space-y-6 sm:space-y-12 sm:justify-center sm:px-6 ms:py-24 md:space-y-0 max-w-6xl">
+    <div class=" flex flex-col items-center justify-center px-2 py-14 mx-auto sm:justify-between sm:px-6 ms:py-10 md:space-y-20 max-w-5xl">
+        <!-- Heading -->
+        <h2 class="text-[24px] leading-9 font-bold text-center text-darkBlue md:text-4xl md:max-w">Ready to Supercharge your projects with ProjectPro? </h2>
+        <!-- buttons -->
+        <div class="flex flex-col items-center space-x-4 max-w-xl md:flex-row mt-2 sm">
+            <div class="my-6">
+                <a href='#' class="p-3 px-10 sm:px-10 pt-2 rounded-sm baseline bg-darkBlue text-primaryWhite text-base sm: w-56 shadow-2xl" >Get Started</a>
+            </div>
+            <div class="my-6 flex">
+                <a href='#' class="p-2 px-8 sm:px-10 pt-2 rounded-sm baseline bg-primaryWhite text-darkBlue  text-center text-base w-56 shadow-2xl hover:bg-darkBlue hover:text-white" >Schedule Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<section id="footer" class='bg-Grey1 text-primaryWhite '>
+   <div class="flex flex-col ms:flex-row items-center justify-between mx-auto max-w-6xl py-14 px-5 space-y-6">
+        <div class="flex items-center text-sm px-4 xl:px-3">
+            <p>© 2023 NewRetirement, Inc. All rights reserved.</p>
+        </div>
+        <div class="flex flex-col items-center space-x-4 space-y-4 text-center text-sm ms:flex-row">
+            <a class="text-left flex items-center">Privacy Policy</a>
+            <a class="text-left flex items-center">Do Not Sell</a>
+            <a class="text-left flex items-center">Terms of Use</a>
+            <a class="text-left flex items-center">Contact Us</a>
+        </div>
+   </div>
+</section>
+
+<!-- scripts -->
+<script type="module" src='scripts/script.js'></script>
+<script type="module" src='scripts/data.js'></script>
+</body>
+</html>
